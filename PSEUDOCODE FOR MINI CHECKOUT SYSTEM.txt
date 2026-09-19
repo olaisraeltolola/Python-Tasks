@@ -1,0 +1,26 @@
+PSEUDOCODE FOR MINI CHECKOUT SYSTEM:    
+
+Prompt the user for input
+Store the input in a reference called name
+
+Prompt the user for another input
+Store the input in a reference called product_name
+
+Prompt the user for another input
+Store the input in a reference called quantity
+
+Prompt the user for another input
+Store the input in a reference called price
+
+Calculate the price of the product by multiplying the input in the reference called price with the input in the reference called quantity
+
+Ask the user if they want to purchase another item
+
+If the user says yes, ask the user for another input stored in the references 
+called product_name, quantity and price
+
+If the user says no, calculate the sum of the prices of all their purchased products
+
+Print the user's bill, which is the sum of the prices of all their purchased products.
+
+
