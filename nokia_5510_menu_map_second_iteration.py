@@ -1,7 +1,7 @@
 repeat = True
 
-skip_print = 0
-back_option = 0
+skip_level = 0
+skip_nested_level = 0
 
 while (repeat):
 	menu_functions = """ 
@@ -33,10 +33,10 @@ Press
 """
 
 	menu_choice = 0
-	if(skip_print == 0):
+	if(skip_level == 0):
 		menu_choice = int(input(menu_functions))
 	else:
-		menu_choice = skip_print
+		menu_choice = skip_level
 		
 	match(menu_choice):
 		case 1:
@@ -61,7 +61,7 @@ Press
 
 """
 
-			skip_print = 0
+			skip_level = 0
 			functions_under_phonebook_menu = int(input(phonebook_menu))
 
 			match(functions_under_phonebook_menu):
@@ -92,7 +92,7 @@ Press
 
 					functions_under_options = int(input(options_menu))
 					match(functions_under_options):
-						case 0: skip_print = 1
+						case 0: skip_level = 1
 						case 1: repeat = False
 						case 2: repeat = False
 						case 3: repeat = False
@@ -118,12 +118,12 @@ Press
 0. Back
 
 """
-			skip_print = 0
+			skip_level = 0
 			functions_under_message_menu = 0
-			if (back_option == 0):
+			if (skip_nested_level == 0):
 				functions_under_message_menu = int(input(message_menu))
 			else:
-				functions_under_message_menu = back_option
+				functions_under_message_menu = skip_nested_level
 
 			match(functions_under_message_menu):
 				
@@ -148,11 +148,11 @@ Press
 
 0. Back
 """
-					back_option = 0
+					skip_nested_level = 0
 					options_under_message_settings_menu = int(input(message_settings_menu))
 
 					match(options_under_message_settings_menu):
-						case 0: skip_print = 2
+						case 0: skip_level = 2
 
 						case 1:
 							options_under_set_1 = """
@@ -170,7 +170,7 @@ Press
 							functions_under_set_1 = int(input(options_under_set_1))
 
 							match(functions_under_set_1):
-								case 0:back_option = 7; skip_print = 2
+								case 0:skip_nested_level = 7; skip_level = 2
 								case 1: repeat = False
 								case 2: repeat = False
 								case 3: repeat = False
@@ -191,7 +191,7 @@ Press
 							functions_under_common = int(input(options_under_common))
 
 							match(functions_under_common):
-								case 0: back_option = 7; skip_print = 2
+								case 0: skip_nested_level = 7; skip_level = 2
 								case 1: repeat = False
 								case 2: repeat = False
 								case 3: repeat = False
@@ -220,7 +220,7 @@ Press
 0. Back
 
 """
-			skip_print = 0
+			skip_level = 0
 			functions_under_call_register_menu = int(input(call_register_menu))
 
 			match(functions_under_call_register_menu):
@@ -248,7 +248,7 @@ Press
 					functions_under_call_duration = int(input(options_under_call_duration))
 
 					match(functions_under_call_duration):
-						case 0: skip_print = 4
+						case 0: skip_level = 4
 						case 1: repeat = False
 						case 2: repeat = False
 						case 3: repeat = False
@@ -271,7 +271,7 @@ Press
 					functions_under_call_costs = int(input(options_under_call_costs))
 
 					match(functions_under_call_costs):
-						case 0: skip_print = 4
+						case 0: skip_level = 4
 						case 1: repeat = False
 						case 2: repeat = False
 						case 3: repeat = False
@@ -290,7 +290,7 @@ Press
 					functions_under_call_cost_settings = int(input(options_under_call_cost_settings))
 
 					match(functions_under_call_cost_settings):
-						case 0: skip_print = 4
+						case 0: skip_level = 4
 						case 1: repeat = False
 						case 2: repeat = False
 
@@ -338,7 +338,7 @@ Press
 0. Back
 """
 
-			skip_print = 0
+			skip_level = 0
 			functions_under_settings_menu = int(input(settings_menu))
 
 			match(functions_under_settings_menu):
@@ -362,7 +362,7 @@ Press
 					functions_under_call_settings = int(input(options_under_call_settings))
 
 					match(functions_under_call_settings):
-						case 0: skip_print = 6
+						case 0: skip_level = 6
 						case 1: repeat = False
 						case 2: repeat = False
 						case 3: repeat = False
@@ -415,7 +415,7 @@ Press
 					functions_under_security_settings = int(input(options_under_security_settings))
 
 					match(functions_under_security_settings):
-						case 0: skip_print = 6
+						case 0: skip_level = 6
 						case 1: repeat = False
 						case 2: repeat = False
 						case 3: repeat = False
