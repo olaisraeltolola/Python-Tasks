@@ -102,7 +102,7 @@ Home: To go to the main menu
 0. Back
 """
 					first_back_option = "0"
-					functions_under_options = input(options_menu)
+					functions_under_options = input(options_menu).lower()
 	
 					match(functions_under_options):
 						case "home": print("Welcome back")
@@ -171,7 +171,7 @@ Home: To go to the main menu
 """
 					skip_nested_level = "0"
 					if second_back_option == "0":
-						options_under_message_settings_menu = input(message_settings_menu)
+						options_under_message_settings_menu = input(message_settings_menu).lower()
 					else:
 						options_under_message_settings_menu = second_back_option
 					match(options_under_message_settings_menu):
@@ -194,7 +194,7 @@ Home: To go to the main menu
 
 """
 							second_back_option = "0"
-							functions_under_set_1 = input(options_under_set_1)
+							functions_under_set_1 = input(options_under_set_1).lower()
 
 							match(functions_under_set_1):
 								case "home": print("Welcome back")
@@ -220,7 +220,7 @@ Home: To go to the main menu
 0. Back
 """
 							second_back_option = "0"						
-							functions_under_common = input(options_under_common)
+							functions_under_common = input(options_under_common).lower()
 
 							match(functions_under_common):
 								case "home": print("Welcome back")
@@ -262,7 +262,7 @@ Home: To go to the main menu
 """
 			skip_level = "0"
 			if third_back_option == "0":
-				functions_under_call_register_menu = input(call_register_menu)
+				functions_under_call_register_menu = input(call_register_menu).lower()
 			else:
 				functions_under_call_register_menu = third_back_option
 
@@ -293,7 +293,7 @@ Home: To go to the main menu
 """
 					third_back_option = "0"
 
-					functions_under_call_duration = input(options_under_call_duration)
+					functions_under_call_duration = input(options_under_call_duration).lower()
 
 					match(functions_under_call_duration):
 						case "home": print("Welcome back")
@@ -321,7 +321,7 @@ Home: To go to the main menu
 """
 					third_back_option = "0"
 
-					functions_under_call_costs = input(options_under_call_costs)
+					functions_under_call_costs = input(options_under_call_costs).lower()
 
 					match(functions_under_call_costs):
 						case "home": print("Welcome back")
@@ -346,7 +346,7 @@ Home: To go to the main menu
 """
 					third_back_option = "0"
 
-					functions_under_call_cost_settings = input(options_under_call_cost_settings)
+					functions_under_call_cost_settings = input(options_under_call_cost_settings).lower()
 
 					match(functions_under_call_cost_settings):
 						case "home": print("Welcome back")
@@ -378,7 +378,7 @@ Home: To go to the main menu
 0. Back
 
 """
-			options_under_tones = input(tones_menu)
+			options_under_tones = input(tones_menu).lower()
 
 			match(options_under_tones):
 				case "home": print("Welcome back")
@@ -411,7 +411,7 @@ Home: To go to the main menu
 
 			skip_level = "0"
 			if fourth_back_option == "0":
-				functions_under_settings_menu = input(settings_menu)
+				functions_under_settings_menu = input(settings_menu).lower()
 			else:
 				functions_under_settings_menu = fourth_back_option
 
@@ -437,7 +437,7 @@ Home: To go to the main menu
 
 """
 					fourth_back_option = "0"
-					functions_under_call_settings = input(options_under_call_settings)
+					functions_under_call_settings = input(options_under_call_settings).lower()
 
 					match(functions_under_call_settings):
 						case "home": print("Welcome back")
@@ -468,7 +468,7 @@ Home: To go to the main menu
 
 """
 					fourth_back_option = "0"
-					functions_under_phone_settings = input(options_under_phone_settings)
+					functions_under_phone_settings = input(options_under_phone_settings).lower()
 
 					match(functions_under_phone_settings):
 						case "home": print("Welcome back")
@@ -499,7 +499,7 @@ Home: To go to the main menu
 0. Back
 """
 					fourth_back_option = "0"
-					functions_under_security_settings = input(options_under_security_settings)
+					functions_under_security_settings = input(options_under_security_settings).lower()
 
 					match(functions_under_security_settings):
 						case "home": print("Welcome back")
@@ -534,7 +534,7 @@ Home: To go to the main menu
 0. Back
 
 """
-			options_under_music = input(music_menu)	
+			options_under_music = input(music_menu).lower()	
 
 			match(options_under_music):
 				case "home": print("Welcome back")
@@ -571,7 +571,7 @@ Home: To go to the main menu
 
 """
 			skip_level = "0"
-			options_under_clock = input(clock_menu)
+			options_under_clock = input(clock_menu).lower()
 
 			match(options_under_clock):
 				case "home": print("Welcome back")
