@@ -1,0 +1,10 @@
+PSEUDOCODE OF THE REVERSE OF WORDS
+Prompt the user to enter a word
+Store the input in a reference called word
+Create an empty reference called reverse_word
+Collect the length of the word entered by the user and subtract one from it
+Store the output in a reference called index_of_word
+Collect each letter of the word entered by the user from the last letter to the first
+Store the letters in the reference called reverse_word
+Print reverse_word.
+

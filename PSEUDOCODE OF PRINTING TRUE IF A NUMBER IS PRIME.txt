@@ -1,0 +1,11 @@
+PSEUDOCODE OF PRINTING TRUE IF A NUMBER IS A PRIME NUMBER
+Prompt the user to enter a number
+Store the input in a reference called number
+Create an empty reference called counter
+Check if the number can be divided by the range of numbers (two to half of the number) 
+If it can be divided by any of the range of numbers, add one to the reference called counter
+If the number inputted is less than 1, add one to the reference called counter
+If counter is equals to zero 
+Print True
+If counter is not equals to zero
+Print False
