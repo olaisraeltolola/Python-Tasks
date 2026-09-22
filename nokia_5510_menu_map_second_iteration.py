@@ -107,9 +107,9 @@ Home: To go to the main menu
 					match(functions_under_options):
 						case "home": print("Welcome back")
 						case "0": skip_level = "1"
-						case "1": repeat = False
-						case "2": repeat = False
-						case "3": repeat = False
+						case "1": print("--Memory in use--");repeat = False
+						case "2": print("--Type of view--");repeat = False
+						case "3": print("--Memory status--");repeat = False
 						case _: print("Invalid choice, please choose again"); first_back_option = "9"; skip_level = "1"
 
 
@@ -147,15 +147,15 @@ Home: To go to the main menu
 
 				case "home": print("Welcome back")
 				case "0": print("Going back")				
-				case "1": repeat = False
-				case "2": repeat = False
-				case "3": repeat = False
-				case "4": repeat = False
-				case "5": repeat = False
-				case "6": repeat = False
-				case "8": repeat = False
-				case "9": repeat = False
-				case "10": repeat = False
+				case "1": print("--Write messages--");repeat = False
+				case "2": print("--Inbox--");repeat = False
+				case "3": print("--Outbox--");repeat = False
+				case "4": print("--Picture messages--");repeat = False
+				case "5": print("--Templates--");repeat = False
+				case "6": print("--Smileys--");repeat = False
+				case "8": print("--Info service--");repeat = False
+				case "9": print("--Voice mailbox number--");repeat = False
+				case "10": print("--Serve command editor--");repeat = False
 
 				case "7":
 					message_settings_menu = """
@@ -199,9 +199,9 @@ Home: To go to the main menu
 							match(functions_under_set_1):
 								case "home": print("Welcome back")
 								case "0":skip_nested_level = "7"; skip_level = "2"
-								case "1": repeat = False
-								case "2": repeat = False
-								case "3": repeat = False
+								case "1": print("--Message centre number--");repeat = False
+								case "2": print("--Messages sent as--");repeat = False
+								case "3": print("--Message validity--");repeat = False
 								case _: print("Invalid choice, please choose again"); second_back_option = "1"; skip_nested_level = "7"; skip_level = "2"
 
 
@@ -225,9 +225,9 @@ Home: To go to the main menu
 							match(functions_under_common):
 								case "home": print("Welcome back")
 								case "0": skip_nested_level = "7"; skip_level = "2"
-								case "1": repeat = False
-								case "2": repeat = False
-								case "3": repeat = False
+								case "1": print("--Delivery reports--");repeat = False
+								case "2": print("--Reply via same centre--");repeat = False
+								case "3": print("--Character support--");repeat = False
 								case _: print("Invalid choice, please choose again"); second_back_option = "2"; skip_nested_level = "7"; skip_level = "2"
 
 
@@ -269,11 +269,11 @@ Home: To go to the main menu
 			match(functions_under_call_register_menu):
 				case "home": print("Welcome back")
 				case "0": print("Going back")				
-				case "1": repeat = False
-				case "2": repeat = False
-				case "3": repeat = False
-				case "4": repeat = False
-				case "8": repeat = False
+				case "1": print("--Missed calls--");repeat = False
+				case "2": print("--Received calls--");repeat = False
+				case "3": print("--Dialled numbers--");repeat = False
+				case "4": print("--Erase recent call lists--");repeat = False
+				case "8": print("--Prepaid credit--");repeat = False
 			
 
 				case "5":
@@ -298,11 +298,11 @@ Home: To go to the main menu
 					match(functions_under_call_duration):
 						case "home": print("Welcome back")
 						case "0": skip_level = "4"
-						case "1": repeat = False
-						case "2": repeat = False
-						case "3": repeat = False
-						case "4": repeat = False
-						case "5": repeat = False
+						case "1": print("--Last call duration--");repeat = False
+						case "2": print("--All calls' duration--");repeat = False
+						case "3": print("--Received calls' duration--");repeat = False
+						case "4": print("--Dialled calls' duration--");repeat = False
+						case "5": print("--Clear timers--");repeat = False
 						case _: print("Invalid choice, please choose again"); third_back_option = "5"; skip_level = "4"
 
 
@@ -326,9 +326,9 @@ Home: To go to the main menu
 					match(functions_under_call_costs):
 						case "home": print("Welcome back")
 						case "0": skip_level = "4"
-						case "1": repeat = False
-						case "2": repeat = False
-						case "3": repeat = False
+						case "1": print("--Last call cost--");repeat = False
+						case "2": print("--All calls' cost--");repeat = False
+						case "3": print("--Clear counters--");repeat = False
 						case _: print("Invalid choice, please choose again"); third_back_option = "6"; skip_level = "4"
 
 
@@ -351,8 +351,8 @@ Home: To go to the main menu
 					match(functions_under_call_cost_settings):
 						case "home": print("Welcome back")
 						case "0": skip_level = "4"
-						case "1": repeat = False
-						case "2": repeat = False
+						case "1": print("--Call cost limit--");repeat = False
+						case "2": print("--Show costs in--");repeat = False
 						case _: print("Invalid choice, please choose again"); third_back_option = "7"; skip_level = "4"
 
 
@@ -383,14 +383,14 @@ Home: To go to the main menu
 			match(options_under_tones):
 				case "home": print("Welcome back")
 				case "0": print("Going back")				
-				case "1": repeat = False
-				case "2": repeat = False
-				case "3": repeat = False
-				case "4": repeat = False
-				case "5": repeat = False
-				case "6": repeat = False
-				case "7": repeat = False
-				case "8": repeat = False
+				case "1": print("--Ringing tone--");repeat = False
+				case "2": print("--Ringing volume--");repeat = False
+				case "3": print("--Incoming call alert--");repeat = False
+				case "4": print("--Message alert tone--");repeat = False
+				case "5": print("--Keypad tones--");repeat = False
+				case "6": print("--Warning tones--");repeat = False
+				case "7": print("--Vibrating alert--");repeat = False
+				case "8": print("--Screen saver--");repeat = False
 				case _: print("Invalid choice, please choose again"); skip_level = "5"
 				
 
@@ -418,7 +418,7 @@ Home: To go to the main menu
 			match(functions_under_settings_menu):
 				case "home": print("Welcome back")
 				case "0": print("Going back")				
-				case "4": repeat = False
+				case "4": print("--Restore factory settings--");repeat = False
 				case "1":
 					options_under_call_settings = """
 
@@ -442,12 +442,12 @@ Home: To go to the main menu
 					match(functions_under_call_settings):
 						case "home": print("Welcome back")
 						case "0": skip_level = "6"
-						case "1": repeat = False
-						case "2": repeat = False
-						case "3": repeat = False
-						case "4": repeat = False
-						case "5": repeat = False
-						case "6": repeat = False
+						case "1": print("--Automatic redial--");repeat = False
+						case "2": print("--Speed dialling--");repeat = False
+						case "3": print("--Call waiting options--");repeat = False
+						case "4": print("--Own number sending--");repeat = False
+						case "5": print("--Phone line in use--");repeat = False
+						case "6": print("--Automatic answer--");repeat = False
 						case _: print("Invalid choice, please choose again"); fourth_back_option = "1"; skip_level = "6"
 
 
@@ -473,11 +473,11 @@ Home: To go to the main menu
 					match(functions_under_phone_settings):
 						case "home": print("Welcome back")
 						case "0": skip_level = "6"
-						case "1": repeat = False
-						case "2": repeat = False
-						case "3": repeat = False
-						case "4": repeat = False
-						case "5": repeat = False
+						case "1": print("--Language--");repeat = False
+						case "2": print("--Cell info display--");repeat = False
+						case "3": print("--Welcome note--");repeat = False
+						case "4": print("--Network selection--");repeat = False
+						case "5": print("--Confirm SIM Service actions--");repeat = False
 						case _: print("Invalid choice, please choose again"); fourth_back_option = "2"; skip_level = "6"
 
 
@@ -504,12 +504,12 @@ Home: To go to the main menu
 					match(functions_under_security_settings):
 						case "home": print("Welcome back")
 						case "0": skip_level = "6"
-						case "1": repeat = False
-						case "2": repeat = False
-						case "3": repeat = False
-						case "4": repeat = False
-						case "5": repeat = False
-						case "6": repeat = False
+						case "1": print("--PIN code request--");repeat = False
+						case "2": print("--Call barring service--");repeat = False
+						case "3": print("--Fixed dialling--");repeat = False
+						case "4": print("--Closed user group--");repeat = False
+						case "5": print("--Security level--");repeat = False
+						case "6": print("--Change access codes--");repeat = False
 						case _: print("Invalid choice, please choose again"); fourth_back_option = "3"; skip_level = "6"
 
 
@@ -539,10 +539,10 @@ Home: To go to the main menu
 			match(options_under_music):
 				case "home": print("Welcome back")
 				case "0": print("Going back")				
-				case "1": repeat = False
-				case "2": repeat = False
-				case "3": repeat = False
-				case "4": repeat = False
+				case "1": print("--Music player--");repeat = False
+				case "2": print("--Radio--");repeat = False
+				case "3": print("--Recorder--");repeat = False
+				case "4": print("--Track list--");repeat = False
 				case _: print("Invalid choice, please choose again"); skip_level = "8"
 				
 
@@ -570,17 +570,18 @@ Home: To go to the main menu
 0. Back
 
 """
+			skip_level = "0"
 			options_under_clock = input(clock_menu)
 
 			match(options_under_clock):
 				case "home": print("Welcome back")
-				case "0": print("Going back")				
-				case "1": repeat = False
-				case "2": repeat = False
-				case "3": repeat = False
-				case "4": repeat = False
-				case "5": repeat = False
-				case "6": repeat = False
+				case "0": print("Going back")	
+				case "1": print("--Alarm clock--");repeat = False
+				case "2": print("--Clock settings--");repeat = False
+				case "3": print("--Date setting--");repeat = False
+				case "4": print("--Stopwatch--");repeat = False
+				case "5": print("--Countdown timer--");repeat = False
+				case "6": print("--Auto update of date and time--");repeat = False
 				case _: print("Invalid choice, please choose again"); skip_level = "12"
 
 
