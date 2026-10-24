@@ -41,12 +41,12 @@ print(others)
 
 # Task Five
 def sum_of_elements_in_list(number_list):
-	for outer_list_index in range(0, len(number_list)):
+	for outer_list_index in range(len(number_list)):
 		sum_of_numbers = 0
 
 		for number in number_list[outer_list_index]:
 			sum_of_numbers += number
-			number_list[outer_list_index] = sum_of_numbers
+		number_list[outer_list_index] = sum_of_numbers
 
 	return number_list
 
@@ -61,7 +61,7 @@ def sum_of_elements_with_same_index(number_list):
 	for checker in range(len(number_list[0])):
 		sum_of_numbers = 0
 
-		for outer_list_index in range(0, len(number_list)):
+		for outer_list_index in range(len(number_list)):
 
 			sum_of_numbers += number_list[outer_list_index][checker]
 		new_list.append(sum_of_numbers)
