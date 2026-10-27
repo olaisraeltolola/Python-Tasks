@@ -13,7 +13,7 @@ def get_number_from_letter(word):
 			"T": "8", "U": "8", "V": "8", 
 			"W": "9", "X": "9", "Y": "9", 
 
-}
+	}
 
 	for letter in word.upper():
 		phone_number += phone_map[letter]
